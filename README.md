@@ -53,7 +53,7 @@ Here's an example of how to use the `LinkedList` class:
 
 ```python
 # import linked list
-from linked_list import LinkedList
+import LinkedList
 
 # Create a new linked list
 linked_list = LinkedList()
