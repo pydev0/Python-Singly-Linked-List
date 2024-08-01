@@ -52,12 +52,16 @@ Represents a singly linked list.
 Here's an example of how to use the `LinkedList` class:
 
 ```python
+# import linked list
+from linked_list import LinkedList
+
 # Create a new linked list
 linked_list = LinkedList()
 
 # Add elements to the end
 linked_list.push_back(10)
 linked_list.push_back(20)
+linked_list.push_back(30)
 
 # Print the list
 linked_list.print_list()  # Output: 10 -> 20 -> 30
@@ -71,14 +75,14 @@ linked_list.print_list()  # Output: True -> Name -> 10 -> 20 -> 30
 
 # Insert an element at index 1
 linked_list.insert(15, 1)
-linked_list.print_list()  # Output: True -> Name -> 10 -> 15 -> 20 -> 30
+linked_list.print_list()  # Output: True -> 15 -> Name -> 10 -> 20 -> 30
 
 # Remove the element at index 2
 linked_list.erase(2)
-linked_list.print_list()  # Output: True -> Name -> 15 -> 20 -> 30
+linked_list.print_list()  # Output: True -> 15 -> 10 -> 20 -> 30
 
 # Get the value at index 1
-print(linked_list.get_value(1))  # Output: Name
+print(linked_list.get_value(1))  # Output: 15
 
 # Get the index of a value
 print(linked_list.get_index(30))  # Output: 4
